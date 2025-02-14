@@ -8,7 +8,7 @@ services:
       - key: APP_ENV
         value: production
       - key: APP_KEY
-        sync: false
+        value: base64:yourGeneratedAppKeyHere=
       - key: DB_CONNECTION
         value: mysql
       - key: DB_HOST
