@@ -3,7 +3,7 @@ services:
     name: laravel-app
     env: docker
     plan: free
-    repo: https://github.com/YOUR_GITHUB_REPO
+    repo: https://github.com/aarya526/WebHive-PHP.git
     envVars:
       - key: APP_ENV
         value: production
