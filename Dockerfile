@@ -27,6 +27,7 @@ RUN composer install --no-dev --optimize-autoloader
 
 RUN php artisan config:clear || true
 RUN php artisan cache:clear || true
+RUN php artisan config:cache || true
 
 # Set proper permissions
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
