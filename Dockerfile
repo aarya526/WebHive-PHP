@@ -22,6 +22,12 @@ WORKDIR /var/www
 COPY . .
 RUN cp .env.example .env
 
+# Install Node modules and build assets
+RUN npm install
+RUN npm run build
+
+RUN php artisan storage:link || true
+
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
