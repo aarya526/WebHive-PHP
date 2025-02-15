@@ -24,6 +24,9 @@ COPY . .
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
+RUN php artisan config:clear || true
+RUN php artisan cache:clear || true
+
 # Set proper permissions
 RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 
@@ -33,4 +36,3 @@ EXPOSE 9000
 # Start Laravel
 CMD php artisan serve --host=0.0.0.0 --port=$PORT
 
-RUN php artisan config:clear && php artisan cache:clear
