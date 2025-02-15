@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     curl \
     git \
+    npm\
     libpng-dev \
     libonig-dev \
     libxml2-dev \
@@ -22,9 +23,12 @@ WORKDIR /var/www
 COPY . .
 RUN cp .env.example .env
 
-# Install Node modules and build assets
-RUN npm install
-RUN npm run build
+# Install Node.js & npm
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs && \
+    npm install && \
+    npm run build
+
 
 RUN php artisan storage:link || true
 
