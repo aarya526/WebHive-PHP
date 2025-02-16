@@ -13,13 +13,13 @@
                         </h1>
                     </div>
                     <p>We offer full service digital media solutions.</p>
-                    <button class="btn btn-cta-white">Get A Quote</button>
+                    <a class="btn btn-cta-white" href="#contact">Get A Quote</a>
                 </div>
                 <div class="image-content"><img src="{{ asset('/img/image.png') }}" alt=""></div>
             </div>
         </div>
     </div>
-    <div class="about-us-section parent-section">
+    <div class="about-us-section parent-section" id="about-us">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -81,7 +81,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-cta">About Us</button>
+                        {{-- <button class="btn btn-cta">About Us</button> --}}
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
             </div>
         </div>
     </div>
-    <div class="our-services-section parent-section">
+    <div class="our-services-section parent-section" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -180,7 +180,7 @@
                             <h1 class="main-heading-1">Website Development</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore </p>
-                            <a href="#" class="btn btn-cta-white">Learn More</a>
+                            {{-- <a href="#" class="btn btn-cta-white">Learn More</a> --}}
                             <div class="slider-section">
                                 <div class="slider-container">
                                     <div class="slider-tracker">
@@ -240,7 +240,7 @@
                             <h1 class="main-heading-1">UI / UX Design</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore </p>
-                            <a href="#" class="btn btn-cta-white">Learn More</a>
+                            {{-- <a href="#" class="btn btn-cta-white">Learn More</a> --}}
                             <div class="slider-section">
                                 <div class="slider-container">
                                     <div class="slider-tracker">
@@ -289,7 +289,7 @@
             </div>
             <div class="row" style="margin-top: 50px;">
                 <div class="col-md-12" style="display: flex; justify-content: center;">
-                    <a href="#" class="btn btn-cta-white" style="margin: 0 auto;">View Services</a>
+                    <a href="#contact" class="btn btn-cta-white" style="margin: 0 auto;">Get A Quote</a>
                 </div>
             </div>
             {{-- <div class="stats-ticker-section">
@@ -348,7 +348,7 @@
             </div> --}}
         </div>
     </div>
-    <div class="pricing-plan-section parent-section">
+    <div class="pricing-plan-section parent-section" id="pricing">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -456,7 +456,7 @@
                                     <li>2 Data Base</li>
                                 </ul>
                             </div>
-                            <a href="#" class="btn btn-cta">Get A Quote</a>
+                            <a href="#contact" class="btn btn-cta">Get A Quote</a>
                         </div>
                     </div>
                 </div>
@@ -484,7 +484,7 @@
                                     <li>2 Data Base</li>
                                 </ul>
                             </div>
-                            <a href="#" class="btn btn-cta">Get A Quote</a>
+                            <a href="#contact" class="btn btn-cta">Get A Quote</a>
                         </div>
                     </div>
                 </div>
@@ -512,14 +512,14 @@
                                     <li>2 Data Base</li>
                                 </ul>
                             </div>
-                            <a href="#" class="btn btn-cta">Get A Quote</a>
+                            <a href="#contact" class="btn btn-cta">Get A Quote</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="contact-us-section parent-section">
+    <div class="contact-us-section parent-section" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -614,7 +614,7 @@
             </div>
         </div>
     </div>
-    <div class="faqs-section parent-section">
+    <div class="faqs-section parent-section" id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

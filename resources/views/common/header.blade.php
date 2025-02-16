@@ -1,17 +1,18 @@
 <div class="header-sidebar-section inactive">
     <div class="sidebar-section-container">
         <div class="sidebar-top-section">
-            <a href="#"><img src="{{ asset('img/webhive-logo.png') }}" alt=""></a>
+            <a href="/"><img src="{{ asset('img/webhive-logo.png') }}" alt=""></a>
             <button class="btn btn-sidebar-close" id="sidebar-close"><i class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="sidebar-menu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">More+</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                {{-- <li><a href="#">Projects</a></li> --}}
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQs</a></li>
             </ul>
         </div>
     </div>
@@ -43,21 +44,22 @@
         <div class="container">
             <div class="bottom-section-container">
                 <div class="logo-section">
-                    <a href="#"><img src="{{ asset('img/webhive-logo.png') }}" alt=""></a>
+                    <a href="/"><img src="{{ asset('img/webhive-logo.png') }}" alt=""></a>
                 </div>
                 <div class="bottom-section-collapse">
                     <div class="menu-section">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">More+</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#about-us">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            {{-- <li><a href="#">Projects</a></li> --}}
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#faq">FAQs</a></li>
                         </ul>
                     </div>
                     <div class="cta-section">
-                        <a href="#" class="btn btn-cta">Get A Quote</a>
+                        <a href="#contact" class="btn btn-cta">Get A Quote</a>
                         <button class="btn btn-sidebar-open" id="sidebar-open"><i class="fa-solid fa-bars"></i></button>
                     </div>
                 </div>

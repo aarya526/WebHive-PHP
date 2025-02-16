@@ -35,8 +35,8 @@ $(document).ready(function () {
         setInterval(moveSlide, 3000);
     });
 
-    $(window).on("scroll", function () {
-        let scrolled = $(window).scrollTop();
-        console.log("You have scrolled: " + scrolled + "px");
-    });
+    // $(window).on("scroll", function () {
+    //     let scrolled = $(window).scrollTop();
+    //     console.log("You have scrolled: " + scrolled + "px");
+    // });
 });
